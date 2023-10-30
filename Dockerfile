@@ -37,7 +37,7 @@ COPY pyproject.toml poetry.lock ./
 RUN poetry install --no-interaction --no-ansi
 
 ADD . /app
-ENV DJANGO_SETTINGS_MODULE="tast_manager.settings"
+ENV DJANGO_SETTINGS_MODULE="task_manager.settings"
 
 EXPOSE 8000
 
